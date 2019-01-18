@@ -129,6 +129,8 @@ function countDown(secs, elem) {
     timeout.play();
     clearTimeout(timer);
     $("#timer").html("Sorry TimeOut");
+    wrong++;
+    setTimeout(nextQuestion, 3000);
   }
 }
 //define stop function for timer
@@ -181,16 +183,10 @@ function pickAnswer() {
 //define the startquestionaire function that is gonna show questions and set timer to load the next one
 function startQuestionaire() {
   play.play();
-  showQuestion = setInterval(nextQuestion, 16000);
-  setInterval(addWrong, 14000);
   displayQuestion();
   pickAnswer();
 }
 
-//define function to add one wrong if timer runs out
-function addWrong() {
-  wrong++;
-}
 
 //define the playagain function that is gonna reset timer
 function playAgain() {
