@@ -139,15 +139,8 @@ function stop() {
   console.log("timer stopped");
 }
 function HideQ$A() {
-  $(".container").hide();
-  $(".myborder").hide();
-  $(".options").hide();
-  $(".question").hide();
-  $(".score").hide();
-  $(".wrong").hide();
-  $(".pickedAnswer").hide();
-  $("#timer").hide();
-  $(".playAgain").hide();
+  $(".container, .myborder, .options, .question, .score, .wrong, .pickedAnswer, #timer, .playAgain").hide();
+  
 }
 function startGame() {
   console.log("Starting Game");
@@ -202,14 +195,9 @@ function playAgain() {
 function displayQuestion() {
   //$("body").css("background-image", "url(assets/images/background.jpg)");
   countDown(15, timer);
-  $(".container").show();
-  $(".myborder").show();
+  $(".container, .myborder, .question, .options, .score, .wrong").show();
   $(".start").hide();
-  $(".question").show();
-  $(".options").show();
-  $(".score").show();
   $(".score").text("Right answers = " + right);
-  $(".wrong").show();
   $(".wrong").text("Wrong answers = " + wrong);
   $(".question").html(QuestionsArray[count].question);
   $("#option0").html(QuestionsArray[count].options.a);
