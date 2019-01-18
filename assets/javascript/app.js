@@ -159,6 +159,7 @@ function startGame() {
 $(".playAgain").click(playAgain);
 
 function pickAnswer() {
+  $(".option").off("click");
   $(".option").on("click", function(event) {
     stop();
     console.log("ID is", event.currentTarget.id);
