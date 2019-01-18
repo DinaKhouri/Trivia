@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <iframe
+      allow="autoplay"
+      style="display:none;"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/XULUBg_ZcAU?rel=0&autoplay=1"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Coiny|Gloria+Hallelujah|Patua+One|Permanent+Marker"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    
+
+    <!-- Include jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <video src="assets/sounds/background.mp4" id="background"></video> -->
+    <audio src="assets/sounds/sorry.mp3" id="sorry"></audio>
+    <audio src="assets/sounds/bell.mp3" id="bell"></audio>
+    <audio src="assets/sounds/timeout.mp3" id="timeout"></audio>
+    <audio src="assets/sounds/pick.mp3" id="play"></audio>
+    <audio src="assets/sounds/#.mp3" id="#"></audio>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <div class="container" id="mycontainer">
+      <div class="question">question</div>
+      <div class="options">
+        <div
+          id="option0"
+          value="option0"
+          class=" option btn btn-light"
+        ></div>
+        <br />
+        <div
+          id="option1"
+          value="option1"
+          class=" option btn btn-light"
+        ></div>
+        <br />
+        <div
+          id="option2"
+          value="option2"
+          class="option btn btn-light"
+        ></div>
+        <br />
+        <div
+          id="option3"
+          value="option3"
+          class="option btn btn-light"
+        ></div>
+      </div>
+      </div>
+      <img class="start btn btn-info" src="assets/images/play.png" /></a>
+      <img class="playAgain btn btn-info" src="assets/images/play.png"></a>
+      <div class="myborder">
+      <div class="pickedAnswer">answer</div>
+      <div class="score">score</div>
+      <div class="wrong">wrong</div>
+      <div id="timer">20</div></div>
+      <!-- <button class="next btn btn-info">next</button> -->
+      
+
+      
+    </div>
+    <script src="assets/javascript/app.js"></script>
+  </body>
+</html>
